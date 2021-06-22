@@ -29,6 +29,8 @@ for f in glob.glob("/input/articles_v6.json.split-*"):
                     es.helpers.bulk(es_client, body, request_timeout=30, max_retries=5, max_chunk_bytes=50)
                 except es.exceptions.ConnectionTimeout:
                     print("!!WARNING!! - Timeout indexing documents! Skipping this chunk.")
+                except es.exceptions.RequestError:
+                    print("!!WWARNING!! - malformed article.")
                 body = []
 
 response = es_client.bulk(body=body)
