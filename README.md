@@ -16,7 +16,8 @@ Elasticsearch will start up in a docker container, and an ingest process will
 also start up, wait for ES to become available, create the index, and ingest
 the example data. By default, port 9200 on the localhost is forwarded to the ES
 port (9200) within the container, to allow easy querying from the host machine.
-*NOTE* - this is not a production-ready, secure setup. It is meant for quick
+
+**NOTE** - this is not a production-ready, secure setup. It is meant for quick
 explorations and experimentation.
 
 # Quickstart
