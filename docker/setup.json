@@ -1,0 +1,1427 @@
+{
+    "mappings": {
+        "properties": {
+            "URL": {
+                "index": "false", 
+                "type": "text"
+            }, 
+            "UserLicense": {
+                "type": "text"
+            }, 
+            "abstract": {
+                "type": "text"
+            }, 
+            "additional_files": {
+                "properties": {
+                    "filepath": {
+                        "type": "text"
+                    }, 
+                    "time": {
+                        "format": "strict_date_optional_time||epoch_millis", 
+                        "type": "date"
+                    }, 
+                    "title": {
+                        "type": "text"
+                    }, 
+                    "url": {
+                        "type": "text"
+                    }
+                }
+            }, 
+            "authKeywords": {
+                "type": "text"
+            }, 
+            "author's affiliation": {
+                "type": "text"
+            }, 
+            "author_affiliation": {
+                "type": "text"
+            }, 
+            "authors": {
+                "type": "text"
+            }, 
+            "content_url": {
+                "type": "text"
+            }, 
+            "contents": {
+                "analyzer": "english", 
+                "fields": {
+                    "case_sensitive": {
+                        "analyzer": "case_sensitive", 
+                        "type": "text"
+                    }, 
+                    "case_sensitive_no_stem": {
+                        "analyzer": "case_sensitive_no_stem", 
+                        "type": "text"
+                    }, 
+                    "no_stem": {
+                        "analyzer": "no_stem", 
+                        "type": "text"
+                    }
+                }, 
+                "type": "text"
+            }, 
+            "corresponding authors": {
+                "type": "text"
+            }, 
+            "cosmos_docker_processing": {
+                "properties": {
+                    "cosmos_v002": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "cosmos_processing": {
+                "properties": {
+                    "cosmos_604ea0a": {
+                        "properties": {
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "cosmos_62b5803": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "cosmos_eb9e03a": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "cosmos_v002": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "mask-rcnn-exp-a79f4da": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "test": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "coverDate": {
+                "type": "text"
+            }, 
+            "coverDate_obj": {
+                "format": "strict_date_optional_time||epoch_millis", 
+                "type": "date"
+            }, 
+            "cuneiform_processing": {
+                "properties": {
+                    "elsevier_002": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "partial": {
+                                "type": "boolean"
+                            }, 
+                            "retries": {
+                                "type": "long"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "doc2vec_processing": {
+                "properties": {
+                    "doc2vec_100k_200": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "doc2vec_100k_50": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "test": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "doi": {
+                "type": "text"
+            }, 
+            "dummy": {
+                "type": "text"
+            }, 
+            "eissn": {
+                "type": "text"
+            }, 
+            "endingPage": {
+                "index": "false", 
+                "type": "text"
+            }, 
+            "fetch_urls": {
+                "type": "text"
+            }, 
+            "fetched": {
+                "type": "boolean"
+            }, 
+            "file_urls": {
+                "type": "text"
+            }, 
+            "filepath": {
+                "index": "false", 
+                "type": "text"
+            }, 
+            "fonttype_processing": {
+                "properties": {
+                    "elsevier_002": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "partial": {
+                                "type": "boolean"
+                            }, 
+                            "retries": {
+                                "type": "long"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "geo_identification_processing": {
+                "properties": {
+                    "d683e20efaee": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "geo_project_processing": {
+                "properties": {
+                    "a04465a3e41f": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "indra_dec2019_processing": {
+                "properties": {
+                    "indra_dec2019": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "test": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "indra_eidos_processing": {
+                "properties": {
+                    "382fc65ae3d0": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "test": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "indra_reach_processing": {
+                "properties": {
+                    "test": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "indra_trips_processing": {
+                "properties": {
+                    "test": {
+                        "properties": {
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "issn": {
+                "type": "text"
+            }, 
+            "issue": {
+                "index": "false", 
+                "type": "text"
+            }, 
+            "language": {
+                "type": "text"
+            }, 
+            "lapps_processing": {
+                "properties": {
+                    "dummy_tag": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "lapps_poc": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "metadata_update": {
+                "format": "strict_date_optional_time||epoch_millis", 
+                "type": "date"
+            }, 
+            "nlp352_parsing_processing": {
+                "properties": {
+                    "nlp_352": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "nlp352_processing": {
+                "properties": {
+                    "nlp_352": {
+                        "properties": {
+                            "archived": {
+                                "type": "boolean"
+                            }, 
+                            "archived_files": {
+                                "type": "text"
+                            }, 
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "in_sentences_nlp352": {
+                                "type": "boolean"
+                            }, 
+                            "in_sentences_nlp352_bazaar": {
+                                "type": "boolean"
+                            }, 
+                            "retries": {
+                                "type": "long"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "long"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "nlp360_abs_processing": {
+                "properties": {
+                    "nlp_360": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "nlp360_poppler_processing": {
+                "properties": {
+                    "nlp_360": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }
+                        }
+                    }, 
+                    "poppler_test": {
+                        "properties": {
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "nlp360_processing": {
+                "properties": {
+                    "dummy_tag": {
+                        "properties": {
+                            "submitted": {
+                                "type": "boolean"
+                            }
+                        }
+                    }, 
+                    "nlp_360": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "retries": {
+                                "type": "long"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "poppler_test": {
+                        "properties": {
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "nlp390_processing": {
+                "properties": {
+                    "nlp_390": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "retries": {
+                                "type": "long"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "long"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "nlp392_processing": {
+                "properties": {
+                    "nlp_392": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "long"
+                            }
+                        }
+                    }, 
+                    "test": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "nlp_processing": {
+                "properties": {
+                    "elsevier_002": {
+                        "properties": {
+                            "archived": {
+                                "type": "boolean"
+                            }, 
+                            "archived_files": {
+                                "type": "text"
+                            }, 
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "in_sentences_nlp": {
+                                "type": "boolean"
+                            }, 
+                            "partial": {
+                                "type": "boolean"
+                            }, 
+                            "retries": {
+                                "type": "long"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "ocr4_png_processing": {
+                "properties": {
+                    "cosmos": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "test": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "ocr_processing": {
+                "properties": {
+                    "elsevier_002": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "partial": {
+                                "type": "boolean"
+                            }, 
+                            "retries": {
+                                "type": "long"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "long"
+                            }
+                        }
+                    }, 
+                    "harvesting_postscript": {
+                        "properties": {
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "online_pubdate": {
+                "type": "text"
+            }, 
+            "openaccess": {
+                "type": "boolean"
+            }, 
+            "page_split_processing": {
+                "properties": {
+                    "elsevier_002": {
+                        "properties": {
+                            "submitted": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "preprint": {
+                "type": "boolean"
+            }, 
+            "priority": {
+                "type": "long"
+            }, 
+            "publication_date": {
+                "properties": {
+                    "month": {
+                        "type": "long"
+                    }, 
+                    "year": {
+                        "type": "long"
+                    }
+                }
+            }, 
+            "publisher": {
+                "type": "text"
+            }, 
+            "pubname": {
+                "fields": {
+                    "full": {
+                        "index": "false", 
+                        "type": "text"
+                    }
+                }, 
+                "type": "text"
+            }, 
+            "scienceparse_processing": {
+                "properties": {
+                    "119f73b6bbeb": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "sha1": {
+                "index": "false", 
+                "type": "text"
+            }, 
+            "source": {
+                "index": "false", 
+                "type": "text"
+            }, 
+            "spatial": {
+                "properties": {
+                    "boundingBox": {
+                        "properties": {
+                            "maxX": {
+                                "type": "long"
+                            }, 
+                            "maxY": {
+                                "type": "double"
+                            }, 
+                            "minX": {
+                                "type": "double"
+                            }, 
+                            "minY": {
+                                "type": "double"
+                            }
+                        }
+                    }, 
+                    "representationalPoint": {
+                        "type": "double"
+                    }, 
+                    "representationalPointIsDerived": {
+                        "type": "boolean"
+                    }
+                }
+            }, 
+            "startingPage": {
+                "index": "false", 
+                "type": "text"
+            }, 
+            "subtitle": {
+                "type": "text"
+            }, 
+            "tags": {
+                "type": "text"
+            }, 
+            "time": {
+                "format": "strict_date_optional_time||epoch_millis", 
+                "type": "date"
+            }, 
+            "title": {
+                "type": "text"
+            }, 
+            "unacquiredsites_processing": {
+                "properties": {
+                    "97f9309ff438": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "double"
+                            }
+                        }
+                    }
+                }
+            }, 
+            "vol": {
+                "index": "false", 
+                "type": "text"
+            }, 
+            "word2vec_processing": {
+                "properties": {
+                    "test": {
+                        "properties": {
+                            "completed": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "filename": {
+                                "type": "text"
+                            }, 
+                            "harvested": {
+                                "type": "boolean"
+                            }, 
+                            "submission_time": {
+                                "format": "strict_date_optional_time||epoch_millis", 
+                                "type": "date"
+                            }, 
+                            "submitted": {
+                                "type": "boolean"
+                            }, 
+                            "success": {
+                                "type": "boolean"
+                            }, 
+                            "time_to_process_queue": {
+                                "type": "long"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }, 
+    "settings": {
+        "index": {
+            "analysis": {
+                "analyzer": {
+                    "case_sensitive": {
+                        "filter": [
+                            "english_possessive_stemmer", 
+                            "english_stop", 
+                            "english_stemmer"
+                        ], 
+                        "tokenizer": "standard", 
+                        "type": "custom"
+                    }, 
+                    "case_sensitive_no_stem": {
+                        "filter": [
+                            "english_stop"
+                        ], 
+                        "tokenizer": "standard", 
+                        "type": "custom"
+                    }, 
+                    "english": {
+                        "filter": [
+                            "english_possessive_stemmer", 
+                            "lowercase", 
+                            "english_stop", 
+                            "english_stemmer"
+                        ], 
+                        "tokenizer": "standard", 
+                        "type": "custom"
+                    }, 
+                    "no_stem": {
+                        "filter": [
+                            "lowercase", 
+                            "english_stop"
+                        ], 
+                        "tokenizer": "standard", 
+                        "type": "custom"
+                    }
+                }, 
+                "filter": {
+                    "english_possessive_stemmer": {
+                        "language": "possessive_english", 
+                        "type": "stemmer"
+                    }, 
+                    "english_stemmer": {
+                        "language": "english", 
+                        "type": "stemmer"
+                    }, 
+                    "english_stop": {
+                        "stopwords": "_english_", 
+                        "type": "stop"
+                    }
+                }
+            }, 
+            "number_of_replicas": "0", 
+            "refresh_interval": "60s"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.0
+    container_name: es01
+    environment:
+      - node.name=es01
+      - discovery.seed_hosts=es01
+      - cluster.initial_master_nodes=es01
+      - cluster.name=es-docker-cluster
+#      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+#    ulimits:
+#      memlock:
+#        soft: -1
+#        hard: -1
+    volumes:
+      - ${ELASTIC_DATA_PATH}:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+  ingest:
+    image: uwxdd/ingest-xdd-covid-19
+    volumes:
+      - ${INPUT_DATA_PATH}:/input/
