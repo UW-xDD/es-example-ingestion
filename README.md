@@ -12,6 +12,13 @@ A `.env` file must be created defining
 2. The local directory holding the input files
 An `example.env` file is included with sample definitions.
 
+Elasticsearch will start up in a docker container, and an ingest process will
+also start up, wait for ES to become available, create the index, and ingest
+the example data. By default, port 9200 on the localhost is forwarded to the ES
+port (9200) within the container, to allow easy querying from the host machine.
+*NOTE* - this is not a production-ready, secure setup. It is meant for quick
+explorations and experimentation.
+
 # Quickstart
 ```
 # update paths in example.env to point to permanent ES directory and location of the input dumps
