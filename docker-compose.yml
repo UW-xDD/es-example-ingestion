@@ -21,5 +21,6 @@ services:
       - 9200:9200
   ingest:
     image: uwxdd/ingest-xdd-covid-19
+    command: "wait-for-it -t 120 -s es01:9200 -- python ingest.py"
     volumes:
       - ${INPUT_DATA_PATH}:/input/

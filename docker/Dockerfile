@@ -1,6 +1,7 @@
 FROM python:3.7-alpine
 
-RUN pip install elasticsearch
+RUN pip install elasticsearch wait-for-it
+
 
 WORKDIR /app/
 COPY docker/ingest.py /app/
